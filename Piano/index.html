@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Playable Piano JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Playable PIANO</h1> 
+            <h2>Key of: </h2>
+            <div class="options">
+                <div class="column startKey">
+                    <span>Start Key:</span><select>
+                        <option value="0">1</option>
+                        <option value="1">2</option>
+                        <option value="2">3</option>
+                        <option value="3">4</option>
+                        <option value="4">5</option>
+                        <option value="5">6</option>
+                        <option value="6">7</option>
+                        <option value="7">8</option>
+                        <option value="8">9</option>
+                        <option value="9">10</option>
+                    
+                    </select>
+                </div>
+                <div class="column oct">
+                    <span>High or Low:</span><select>
+                        <option value=1>High</option>
+                        <option value=0>Low</option>
+                    </select>
+                </div>
+                <div class="column key">
+                    <span>Key:</span><select>
+                        <option value=0>C</option>
+                        <option value=1>C#/Db</option>
+                        <option value=2>D</option>
+                        <option value=3>D#/Eb</option>
+                        <option value=4>E</option>
+                        <option value=5>F</option>
+                        <option value=6>F#/Gb</option>
+                        <option value=7>G</option>
+                        <option value=8>G#/Ab</option>
+                        <option value=9>A</option>
+                        <option value=10>A#/Bb</option>
+                        <option value=11>B</option>
+                    </select>
+                </div>
+                <div class="column mode">
+                    <span>Mode:</span><select>
+                        <option value=0>Major</option>
+                        <option value=1>Minor</option>
+                        <option value=2>Dorian</option>
+                        <option value=3>Phrygian</option>
+                        <option value=4>Lydian</option>
+                        <option value=5>Mixolydian</option>
+                        <option value=6>Locrian</option>
+                    </select>
+                </div>
+
+                <button class="column" id="submit">Change</button>
+            </div>
+            <div class="keyNums">
+                <h3>1</h3>
+                <h3>2</h3>
+                <h3>3</h3>
+                <h3>4</h3>
+                <h3>5</h3>
+                <h3>6</h3>
+                <h3>7</h3>
+                <h3>8</h3>
+                <h3>9</h3>
+                <h3>10</h3>
+            </div>
+        </header>
+        
+        <ul class="piano-keys">
+
+            <li class="key white shown" data-key="a"><span>A</span><p></p></li>
+            <li class="key black shown" data-key="w"><span>W</span><p></p></li>
+            <li class="key white shown" data-key="s"><span>S</span><p></p></li>
+            <li class="key black shown" data-key="e"><span>E</span><p></p></li>
+            <li class="key white shown" data-key="d"><span>D</span><p></p></li>
+            <li class="key black shown" data-key="r"><span>R</span><p></p></li>
+            <li class="key white shown" data-key="f"><span>F</span><p></p></li>
+            <li class="key black shown" data-key="t"><span>T</span><p></p></li>
+            <li class="key white shown" data-key="g"><span>G</span><p></p></li>
+            <li class="key black shown" data-key="y"><span>Y</span><p></p></li>
+            <li class="key white shown" data-key="h"><span>H</span><p></p></li>
+            <li class="key black shown" data-key="u"><span>U</span><p></p></li>
+            <li class="key white shown" data-key="j"><span>J</span><p></p></li>
+            <li class="key black shown" data-key="i"><span>I</span><p></p></li>
+            <li class="key white shown" data-key="k"><span>K</span><p></p></li>
+            <li class="key black shown" data-key="o"><span>O</span><p></p></li>
+            <li class="key white shown" data-key="l"><span>L</span><p></p></li>
+            <li class="key black shown" data-key="p"><span>P</span><p></p></li>
+            <li class="key white shown" data-key=";"><span>;</span><p></p></li>
+        </ul>
+        
+    </div>
+
+</body>
+</html>
